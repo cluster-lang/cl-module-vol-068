@@ -1,0 +1,10 @@
+// cl-rust-iter-fold-stage-8828: Test Suite
+import "../rif_8828.zk"
+
+fn test_run():
+    res := iter_fold_step_8828(10, 5)
+    if res != (35 + 8828) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-iter-fold-stage-8828!")

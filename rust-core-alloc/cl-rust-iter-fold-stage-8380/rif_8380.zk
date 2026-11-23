@@ -1,0 +1,6 @@
+// cl-rust-iter-fold-stage-8380
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn iter_fold_step_8380(acc: int, item: int) -> int:
+    return (acc * 3 + item + 8380) & 2147483647

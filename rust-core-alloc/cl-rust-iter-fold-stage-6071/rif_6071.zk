@@ -1,0 +1,6 @@
+// cl-rust-iter-fold-stage-6071
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn iter_fold_step_6071(acc: int, item: int) -> int:
+    return (acc * 3 + item + 6071) & 2147483647

@@ -1,0 +1,10 @@
+// cl-rust-iter-fold-stage-6654: Test Suite
+import "../rif_6654.zk"
+
+fn test_run():
+    res := iter_fold_step_6654(10, 5)
+    if res != (35 + 6654) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-iter-fold-stage-6654!")

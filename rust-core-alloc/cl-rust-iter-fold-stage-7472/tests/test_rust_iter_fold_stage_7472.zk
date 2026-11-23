@@ -1,0 +1,10 @@
+// cl-rust-iter-fold-stage-7472: Test Suite
+import "../rif_7472.zk"
+
+fn test_run():
+    res := iter_fold_step_7472(10, 5)
+    if res != (35 + 7472) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-iter-fold-stage-7472!")

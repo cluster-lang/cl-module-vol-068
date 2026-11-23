@@ -1,0 +1,10 @@
+// cl-rust-iter-fold-stage-8054: Test Suite
+import "../rif_8054.zk"
+
+fn test_run():
+    res := iter_fold_step_8054(10, 5)
+    if res != (35 + 8054) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-iter-fold-stage-8054!")
